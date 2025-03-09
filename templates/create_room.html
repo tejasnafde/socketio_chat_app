@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Chat Room</title>
+</head>
+<body>
+    <h1>Create a Chat Room</h1>
+    <form action="{{ url_for('chat.create_room') }}" method="POST">
+        <label for="user_name">User Name:</label>
+        <input type="text" id="user_name" name="user_name" required>
+        
+        <label for="room_name">Room Name:</label>
+        <input type="text" id="room_name" name="room_name" required>
+        
+        <button type="submit">Create Room</button>
+    </form>
+</body>
+</html>
