@@ -1,8 +1,8 @@
 #!/bin/bash
 set -o errexit  # Exit on error
 
-# Install dependencies
-poetry install --no-interaction
+# Install dependencies without installing the current project as a package
+poetry install --no-interaction --no-root
 
 # Always run migrations (Render handles DB persistence)
 flask db upgrade
