@@ -2,7 +2,7 @@ import os
 
 class Config:
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'your-secret-key'
-    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or 'postgresql://tejas:zmxncbv@localhost/flask_demo'
+    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or 'postgresql://tejas:HL5PHNfcuoPwourxKKLvhG6VIMGhbjbs@dpg-cv6mauan91rc73bgi1d0-a:5432/test_db_rfl6'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 
